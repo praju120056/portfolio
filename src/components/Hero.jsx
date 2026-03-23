@@ -138,7 +138,7 @@ export default function Hero() {
               </button>
               <a
                 id="hero-resume-btn"
-                href="https://drive.google.com/uc?export=download&id=1FrQjym6DUppAerI3toR5ALFiu24395zu"
+                href="https://drive.google.com/file/d/1FrQjym6DUppAerI3toR5ALFiu24395zu/view"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-ghost"

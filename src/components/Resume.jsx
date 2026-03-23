@@ -1,6 +1,6 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { Download } from 'lucide-react';
+import { Eye } from 'lucide-react';
 
 export default function Resume() {
   const ref = useRef(null);
@@ -43,8 +43,8 @@ export default function Resume() {
             transition={{ duration: 0.6, delay: 0.3 }}
           >
             <a
-              id="download-resume-btn"
-              href="https://drive.google.com/uc?export=download&id=1FrQjym6DUppAerI3toR5ALFiu24395zu"
+              id="view-resume-btn"
+              href="https://drive.google.com/file/d/1FrQjym6DUppAerI3toR5ALFiu24395zu/view"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-gold"
@@ -58,8 +58,8 @@ export default function Resume() {
                 zIndex: 2,
               }}
             >
-              <Download size={15} />
-              Download Resume
+              <Eye size={15} />
+              View Résumé
             </a>
           </motion.div>
         </div>
