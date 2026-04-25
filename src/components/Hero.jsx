@@ -10,7 +10,7 @@ const fadeUp = {
 };
 
 const PHOTO_URL =
-  'https://drive.google.com/file/d/1v2QKtO6LuxYx6zw_6EX_KV7yNyu1skxH/view?usp=sharing';
+  'https://drive.google.com/uc?export=view&id=1v2QKtO6LuxYx6zw_6EX_KV7yNyu1skxH';
 
 export default function Hero() {
   return (
