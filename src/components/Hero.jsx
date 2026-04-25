@@ -10,7 +10,7 @@ const fadeUp = {
 };
 
 const PHOTO_URL =
-  'https://drive.google.com/thumbnail?id=1RRf43pOiZwe24WmvP49whyJhqYioGw9N&sz=w600';
+  'https://drive.google.com/file/d/1rcnQ6_VKk2TwqanbKcvG5fZeolp1Y4xX/view?usp=drivesdk';
 
 export default function Hero() {
   return (
