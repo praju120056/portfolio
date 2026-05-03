@@ -43,6 +43,15 @@ const PROJECTS = [
       'Axios interceptors for JWT injection'
     ],
   },
+  {
+    id: 'more-projects',
+    label: 'Archive',
+    title: 'More Projects',
+    description: 'Additional systems, experiments, and smaller projects.',
+    stack: [],
+    github: 'https://github.com/praju120056',
+    ctaText: 'View GitHub',
+  },
 ];
 
 const cardVariants = {
@@ -75,7 +84,7 @@ function ProjectCard({ project, index }) {
             marginBottom: '0.75rem',
           }}
         >
-          Project_{String(index + 1).padStart(2, '0')}
+          {project.label || `Project_${String(index + 1).padStart(2, '0')}`}
         </p>
         <h3
           style={{
@@ -92,19 +101,28 @@ function ProjectCard({ project, index }) {
         <p style={{ color: '#A0A0A0', fontSize: '0.875rem', lineHeight: 1.7, marginBottom: '1rem' }}>
           {project.description}
         </p>
-        <ul style={{ color: '#A0A0A0', fontSize: '0.875rem', lineHeight: 1.7, paddingLeft: '1.2rem', marginBottom: '1.5rem' }}>
-          {project.highlights && project.highlights.map((item, i) => (
-            <li key={i} style={{ marginBottom: '0.25rem' }}>{item}</li>
-          ))}
-        </ul>
+        {project.highlights && project.highlights.length > 0 && (
+          <>
+            <p style={{ color: '#EAEAEA', fontSize: '0.875rem', fontWeight: 600, marginBottom: '0.5rem' }}>
+              Key Highlights
+            </p>
+            <ul style={{ color: '#A0A0A0', fontSize: '0.875rem', lineHeight: 1.7, paddingLeft: '1.2rem', marginBottom: '1.5rem' }}>
+              {project.highlights.map((item, i) => (
+                <li key={i} style={{ marginBottom: '0.25rem' }}>{item}</li>
+              ))}
+            </ul>
+          </>
+        )}
       </div>
 
       {/* Tech stack */}
-      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.4rem', marginBottom: '1.75rem' }}>
-        {project.stack.map(t => (
-          <span key={t} className="tech-badge">{t}</span>
-        ))}
-      </div>
+      {project.stack && project.stack.length > 0 && (
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.4rem', marginBottom: '1.75rem' }}>
+          {project.stack.map(t => (
+            <span key={t} className="tech-badge">{t}</span>
+          ))}
+        </div>
+      )}
 
       {/* Bottom line */}
       <div style={{ height: '1px', background: '#1F1F1F', marginBottom: '1.5rem' }} />
@@ -118,7 +136,7 @@ function ProjectCard({ project, index }) {
         style={{ fontSize: '0.75rem', display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '0.45rem 1rem', position: 'relative', zIndex: 2 }}
       >
         <Github size={13} />
-        GitHub
+        {project.ctaText || 'GitHub'}
       </a>
     </motion.div>
   );
