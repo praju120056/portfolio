@@ -4,36 +4,44 @@ import { Github } from 'lucide-react';
 
 const PROJECTS = [
   {
-    id: 'facial-emotion',
-    title: 'Facial Emotion Recognition Framework',
+    id: 'pinn-lstm',
+    title: 'PINN-Based Hybrid LSTM Model for Battery SOH & RUL Prediction',
     description:
-      'A deep learning framework for real-time facial emotion detection using CNNs, capable of identifying multiple emotional states from live video streams with high accuracy.',
-    stack: ['Python', 'PyTorch', 'OpenCV', 'Computer Vision', 'CNN'],
-    github: 'https://github.com/praju120056/Facial-Emotion-Recognition-Framework',
-  },
-  {
-    id: 'unix-shell',
-    title: 'UNIX Style Shell',
-    description:
-      'A custom UNIX-style command-line shell implemented in C, supporting piping, redirection, signal handling, and built-in commands with process management.',
-    stack: ['C', 'UNIX', 'Systems Programming', 'Process Management'],
-    github: 'https://github.com/praju120056/UNIX-style-shell',
+      'Physics-informed LSTM model using differential equation constraints for battery health prediction on NASA dataset.',
+    stack: ['PyTorch', 'NumPy', 'SciPy', 'Matplotlib'],
+    github: '#',
+    highlights: [
+      'Achieved RMSE: 1.01%, MAE: 0.67%',
+      'Outperformed baselines by 2–3×',
+      'Published in Scientific Reports (Nature Portfolio, 2026)'
+    ],
   },
   {
     id: 'skill-exchange',
-    title: 'Skill Exchange 2.0',
+    title: 'Skill Exchange Platform',
     description:
-      'A full-stack peer-to-peer skill exchange platform with matchmaking, real-time messaging, and user profile management built on the MERN stack.',
-    stack: ['React', 'Node.js', 'MongoDB', 'Express', 'Tailwind'],
-    github: 'https://github.com/praju120056/skill-exchange-2.0',
+      'MERN stack platform with JWT-based authentication and RESTful API deployed on Azure App Service.',
+    stack: ['React', 'Node.js', 'Express.js', 'MongoDB'],
+    github: '#',
+    highlights: [
+      'Supports 50+ users',
+      'CI/CD using GitHub Actions',
+      'Secrets managed via GitHub Secrets'
+    ],
   },
   {
-    id: 'neococoon',
-    title: 'NeoCocoon',
+    id: 'zero-trust-banking',
+    title: 'Zero Trust Banking Engine',
     description:
-      'An IoT-based smart incubator system for neonatal care, using microcontrollers and sensors to monitor and regulate temperature, humidity, and vital parameters.',
-    stack: ['Embedded C', 'Raspberry Pi', 'Sensors', 'IoT', 'Serial Communication'],
-    github: 'https://github.com/praju120056/neococoon',
+      'Async backend with CRUD and JWT validation, featuring role-based views for customers, managers, and admins.',
+    stack: ['React', 'FastAPI', 'PostgreSQL'],
+    github: '#',
+    highlights: [
+      'React + Vite frontend',
+      'Keycloak for authentication',
+      'OPA for policy enforcement',
+      'Axios interceptors for JWT injection'
+    ],
   },
 ];
 
@@ -81,9 +89,14 @@ function ProjectCard({ project, index }) {
         >
           {project.title}
         </h3>
-        <p style={{ color: '#A0A0A0', fontSize: '0.875rem', lineHeight: 1.7, marginBottom: '1.5rem' }}>
+        <p style={{ color: '#A0A0A0', fontSize: '0.875rem', lineHeight: 1.7, marginBottom: '1rem' }}>
           {project.description}
         </p>
+        <ul style={{ color: '#A0A0A0', fontSize: '0.875rem', lineHeight: 1.7, paddingLeft: '1.2rem', marginBottom: '1.5rem' }}>
+          {project.highlights && project.highlights.map((item, i) => (
+            <li key={i} style={{ marginBottom: '0.25rem' }}>{item}</li>
+          ))}
+        </ul>
       </div>
 
       {/* Tech stack */}

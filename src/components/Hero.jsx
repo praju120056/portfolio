@@ -82,7 +82,7 @@ export default function Hero() {
                 marginBottom: '2.5rem',
               }}
             >
-              Engineer &nbsp;|&nbsp; AI/ML &nbsp;|&nbsp; Systems &nbsp;|&nbsp; Embedded
+              Software Engineer
             </motion.p>
 
             {/* Divider */}
@@ -103,7 +103,7 @@ export default function Hero() {
               custom={0.3}
               style={{
                 fontFamily: 'Playfair Display, serif',
-                fontStyle: 'italic',
+                fontStyle: 'normal',
                 fontSize: 'clamp(1rem, 2vw, 1.35rem)',
                 color: '#C0C0C0',
                 maxWidth: '560px',
@@ -111,7 +111,7 @@ export default function Hero() {
                 lineHeight: 1.5,
               }}
             >
-              &ldquo;I build intelligent systems that combine software, physics, and data.&rdquo;
+              Published researcher in Scientific Reports (Nature Portfolio).
             </motion.p>
 
             {/* Buttons */}
@@ -154,39 +154,6 @@ export default function Hero() {
               </button>
             </motion.div>
 
-            {/* Currently working on */}
-            <motion.div
-              variants={fadeUp}
-              initial="hidden"
-              animate="visible"
-              custom={0.5}
-              style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}
-            >
-              <span
-                style={{
-                  display: 'inline-block',
-                  width: '6px',
-                  height: '6px',
-                  borderRadius: '50%',
-                  background: '#D4AF37',
-                  boxShadow: '0 0 6px rgba(212, 175, 55, 0.6)',
-                  flexShrink: 0,
-                }}
-              />
-              <p
-                style={{
-                  fontFamily: 'JetBrains Mono, monospace',
-                  fontSize: '0.75rem',
-                  color: '#A0A0A0',
-                  letterSpacing: '0.05em',
-                }}
-              >
-                Currently working on:{' '}
-                <span style={{ color: '#EAEAEA' }}>
-                  Physics-Informed Neural Networks for Battery Health Prediction
-                </span>
-              </p>
-            </motion.div>
           </div>
 
           {/* ── RIGHT: Photo ── */}

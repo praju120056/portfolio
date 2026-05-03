@@ -3,24 +3,28 @@ import { useRef } from 'react';
 
 const SKILLS = [
   {
-    category: 'Programming',
-    items: ['Python', 'C++', 'C', 'JavaScript'],
+    category: 'Core Programming',
+    items: ['C', 'C++', 'Python', 'SQL'],
   },
   {
-    category: 'AI / ML',
-    items: ['PyTorch', 'TensorFlow', 'Scikit-learn', 'Computer Vision', 'LSTM', 'Physics-Informed Neural Networks'],
+    category: 'CS Fundamentals',
+    items: ['Data Structures & Algorithms', 'OOP', 'Operating Systems', 'DBMS', 'Computer Networks'],
   },
   {
-    category: 'Web',
-    items: ['React', 'Node.js', 'Express', 'MongoDB', 'HTML', 'CSS', 'Tailwind'],
+    category: 'Backend & APIs',
+    items: ['Node.js', 'Express.js', 'FastAPI', 'REST APIs'],
   },
   {
-    category: 'Systems / Embedded',
-    items: ['Linux', 'UNIX', 'Shell Programming', 'Microcontrollers', 'Raspberry Pi', 'Sensors', 'Serial Communication'],
+    category: 'Databases',
+    items: ['MongoDB', 'PostgreSQL'],
   },
   {
-    category: 'Tools',
-    items: ['Git', 'Docker'],
+    category: 'Cloud & Networking',
+    items: ['Google Cloud Platform (GCP)', 'Oracle Cloud Infrastructure (OCI)', 'TCP/IP', 'DNS'],
+  },
+  {
+    category: 'Tools & Technologies',
+    items: ['React', 'PyTorch', 'Git'],
   },
 ];
 

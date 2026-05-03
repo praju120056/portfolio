@@ -85,7 +85,7 @@ export default function FeaturedResearch() {
                   marginBottom: '2rem',
                 }}
               >
-                PINN-based Hybrid LSTM Architecture for Battery Degradation
+                PINN-Based Hybrid LSTM Model for Battery SOH & RUL Prediction
               </h3>
 
               <a
@@ -114,7 +114,7 @@ export default function FeaturedResearch() {
 
             {/* Right column */}
             <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
-              {/* Problem statement */}
+              {/* Publication */}
               <div>
                 <p
                   style={{
@@ -126,14 +126,14 @@ export default function FeaturedResearch() {
                     marginBottom: '0.6rem',
                   }}
                 >
-                  Problem Statement
+                  Publication
                 </p>
                 <p style={{ color: '#C0C0C0', fontSize: '0.9rem', lineHeight: 1.7 }}>
-                  Traditional data-driven models for battery state-of-health prediction fail to capture the underlying electrochemical physics, leading to poor generalization and unreliable degradation forecasting in real-world battery management systems.
+                  Published in Scientific Reports (Nature Portfolio), 2026.
                 </p>
               </div>
 
-              {/* Method */}
+              {/* Contribution */}
               <div>
                 <p
                   style={{
@@ -145,32 +145,11 @@ export default function FeaturedResearch() {
                     marginBottom: '0.6rem',
                   }}
                 >
-                  Method
+                  Contribution
                 </p>
                 <p style={{ color: '#C0C0C0', fontSize: '0.9rem', lineHeight: 1.7 }}>
-                  A hybrid architecture combining Physics-Informed Neural Networks (PINNs) with LSTM networks, embedding electrochemical degradation equations directly into the loss function to constrain predictions with physical laws.
+                  Physics-informed LSTM model combining differential equation constraints for battery degradation prediction.
                 </p>
-              </div>
-
-              {/* Tech stack */}
-              <div>
-                <p
-                  style={{
-                    fontFamily: 'JetBrains Mono, monospace',
-                    fontSize: '0.65rem',
-                    letterSpacing: '0.18em',
-                    textTransform: 'uppercase',
-                    color: '#A0A0A0',
-                    marginBottom: '0.75rem',
-                  }}
-                >
-                  Tools / Stack
-                </p>
-                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
-                  {['PyTorch', 'LSTM', 'PINNs', 'Python', 'NumPy', 'Matplotlib', 'Electrochemistry'].map(tag => (
-                    <span key={tag} className="tech-badge">{tag}</span>
-                  ))}
-                </div>
               </div>
             </div>
           </div>
