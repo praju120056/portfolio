@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
-
+import profilePic from '../assets/profile.jpg';
+import resume from '../assets/resume.pdf';
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
   visible: (delay = 0) => ({
@@ -9,8 +10,7 @@ const fadeUp = {
   }),
 };
 
-const PHOTO_URL =
-  "https://drive.google.com/thumbnail?id=17ud0aHQ1nhnht1-Q5hHrLUKyqOrCxVZF&sz=w600";
+const PHOTO_URL = profilePic;
 
 export default function Hero() {
   return (
@@ -138,7 +138,7 @@ export default function Hero() {
               </button>
               <a
                 id="hero-resume-btn"
-                href="https://drive.google.com/file/d/1FrQjym6DUppAerI3toR5ALFiu24395zu/view"
+                href={resume}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-ghost"
