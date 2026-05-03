@@ -1,6 +1,7 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { Eye } from 'lucide-react';
+import resume from '../assets/resume.pdf';
 
 export default function Resume() {
   const ref = useRef(null);
@@ -44,7 +45,7 @@ export default function Resume() {
           >
             <a
               id="view-resume-btn"
-              href="https://drive.google.com/file/d/1FrQjym6DUppAerI3toR5ALFiu24395zu/view"
+              href={resume}
               target="_blank"
               rel="noopener noreferrer"
               className="btn-gold"
