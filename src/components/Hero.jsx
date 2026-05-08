@@ -111,7 +111,8 @@ export default function Hero() {
                 lineHeight: 1.5,
               }}
             >
-              Published researcher in Scientific Reports (Nature Portfolio).
+              Engineering student building at the intersection of AI, systems, and software — from physics-informed ML research and backend architectures to full-stack platforms and low-level computing experiments.
+
             </motion.p>
 
             {/* Buttons */}
