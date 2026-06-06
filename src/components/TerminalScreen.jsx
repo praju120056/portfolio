@@ -45,7 +45,7 @@ function useTypingEffect(lines) {
 
   return { displayedLines, done };
 }
-
+// this is made by praju120056
 export default function TerminalScreen({ onEnter }) {
   const { displayedLines, done } = useTypingEffect(LINES);
   const [cursor, setCursor] = useState(true);
