@@ -9,7 +9,7 @@ const PROJECTS = [
     description:
       'Physics-informed LSTM model using differential equation constraints for battery health prediction on NASA dataset.',
     stack: ['PyTorch', 'NumPy', 'SciPy', 'Matplotlib'],
-    github: '#',
+    github: 'https://github.com/praju120056/PINN-based-Hybrid-LSTM-Architecture-for-Battery-Degradation',
     highlights: [
       'Achieved RMSE: 1.01%, MAE: 0.67%',
       'Outperformed baselines by 2–3×',
@@ -22,9 +22,9 @@ const PROJECTS = [
     description:
       'MERN stack platform with JWT-based authentication and RESTful API deployed on Azure App Service.',
     stack: ['React', 'Node.js', 'Express.js', 'MongoDB'],
-    github: '#',
+    github: 'https://github.com/praju120056/skill-exchange-2.0',
     highlights: [
-      'Supports 50+ users',
+      'Supports users in a university setting',
       'CI/CD using GitHub Actions',
       'Secrets managed via GitHub Secrets'
     ],
@@ -35,7 +35,7 @@ const PROJECTS = [
     description:
       'Async backend with CRUD and JWT validation, featuring role-based views for customers, managers, and admins.',
     stack: ['React', 'FastAPI', 'PostgreSQL'],
-    github: '#',
+    github: 'https://github.com/praju120056/banking_zta',
     highlights: [
       'React + Vite frontend',
       'Keycloak for authentication',
