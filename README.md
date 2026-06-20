@@ -4,7 +4,7 @@ A minimal, fast, and functional personal portfolio built to showcase projects, r
 
 This is not a template-heavy, overdesigned portfolio. The focus is on clarity, performance, and content.
 
-http://portfolio-jg5e.vercel.app/
+https://prajakth-portfolio.vercel.app/
 
 ---
 
