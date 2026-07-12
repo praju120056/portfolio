@@ -30,23 +30,26 @@ function CursorGlow() {
 
 function Footer() {
   return (
-    <footer
-      style={{
-        borderTop: '1px solid #1F1F1F',
-        padding: '2.5rem 0',
-      }}
-    >
+    <footer style={{ borderTop: '1px solid #1F1F1F', padding: '2.5rem 0' }}>
       <div className="section-wrapper flex items-center justify-between flex-wrap gap-4">
-        <p style={{ fontFamily: 'JetBrains Mono, monospace', fontSize: '0.72rem', color: '#A0A0A0', letterSpacing: '0.08em' }}>
+        <p style={{ fontFamily: 'JetBrains Mono, monospace', fontSize: '0.72rem', color: '#A0A0A0' }}>
           © 2026 Prajakth N Kumar
         </p>
-        <p style={{ fontFamily: 'JetBrains Mono, monospace', fontSize: '0.7rem', color: '#3a3a3a', letterSpacing: '0.05em' }}>
+
+        {/* Elfsight Visitor Counter */}
+        <div
+          className="elfsight-app-1a03ccb3-22b3-47ff-afc8-6e1912b45e9f"
+          data-elfsight-app-lazy
+        />
+
+        <p style={{ fontFamily: 'JetBrains Mono, monospace', fontSize: '0.7rem', color: '#3a3a3a' }}>
           Built with React + Vite
         </p>
       </div>
     </footer>
   );
 }
+
 
 export default function App() {
   const [entered, setEntered] = useState(false);
