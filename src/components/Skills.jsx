@@ -3,28 +3,20 @@ import { useRef } from 'react';
 
 const SKILLS = [
   {
-    category: 'Core Programming',
-    items: ['C', 'C++', 'Python', 'SQL'],
+    category: 'LANGUAGES',
+    items: ['C', 'C++', 'Python', 'TypeScript', 'JavaScript', 'SQL'],
   },
   {
-    category: 'CS Fundamentals',
-    items: ['Data Structures & Algorithms', 'OOP', 'Operating Systems', 'DBMS', 'Computer Networks'],
+    category: 'BACKEND & DATA',
+    items: ['FastAPI', 'Node.js', 'Express.js', 'REST APIs', 'PostgreSQL', 'MongoDB'],
   },
   {
-    category: 'Backend & APIs',
-    items: ['Node.js', 'Express.js', 'FastAPI', 'REST APIs'],
+    category: 'AI / ML',
+    items: ['PyTorch', 'RAG', 'Embeddings', 'Computer Vision', 'Signal Processing'],
   },
   {
-    category: 'Databases',
-    items: ['MongoDB', 'PostgreSQL'],
-  },
-  {
-    category: 'Cloud & Networking',
-    items: ['Google Cloud Platform (GCP)', 'Oracle Cloud Infrastructure (OCI)', 'TCP/IP', 'DNS'],
-  },
-  {
-    category: 'Tools & Technologies',
-    items: ['React', 'PyTorch', 'Git'],
+    category: 'SYSTEMS & TOOLS',
+    items: ['Linux', 'Git', 'Docker', 'GitHub Actions', 'GCP'],
   },
 ];
 
@@ -57,6 +49,7 @@ export default function Skills() {
           {SKILLS.map((group, i) => (
             <motion.div
               key={group.category}
+              className="skills-row"
               initial={{ opacity: 0, y: 20 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: 0.1 + i * 0.08 }}

@@ -36,12 +36,6 @@ function Footer() {
           © 2026 Prajakth N Kumar
         </p>
 
-        {/* Elfsight Visitor Counter */}
-        <div
-          className="elfsight-app-1a03ccb3-22b3-47ff-afc8-6e1912b45e9f"
-          data-elfsight-app-lazy
-        />
-
         <p style={{ fontFamily: 'JetBrains Mono, monospace', fontSize: '0.7rem', color: '#3a3a3a' }}>
           Built with React + Vite
         </p>
