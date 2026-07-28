@@ -82,7 +82,7 @@ export default function Hero() {
                 marginBottom: '2.5rem',
               }}
             >
-              Software Engineer
+              SOFTWARE ENGINEERING / AI SYSTEMS / RESEARCH
             </motion.p>
 
             {/* Divider */}
@@ -111,8 +111,7 @@ export default function Hero() {
                 lineHeight: 1.5,
               }}
             >
-              Engineering student building at the intersection of AI, systems, and software — from physics-informed ML research and backend architectures to full-stack platforms and low-level computing experiments.
-
+              Engineering student building across AI, backend systems, systems software, and applied research — from developer intelligence and secure architectures to physics-informed ML and embedded systems.
             </motion.p>
 
             {/* Buttons */}

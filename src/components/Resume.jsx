@@ -34,7 +34,7 @@ export default function Resume() {
               transition={{ duration: 0.6, delay: 0.2 }}
               style={{ color: '#A0A0A0', fontSize: '0.9rem', marginTop: '1rem', maxWidth: '420px' }}
             >
-              Available for research collaborations, engineering roles, and consulting opportunities.
+              Open to software engineering roles, research collaborations, and interesting technical problems.
             </motion.p>
           </div>
 
