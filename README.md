@@ -63,7 +63,6 @@ The goal is simple:
 │   │   ├── Skills.jsx
 │   │   └── TerminalScreen.jsx
 │   ├── App.jsx
-│   ├── App.css
 │   ├── index.css
 │   └── main.jsx
 ├── index.html
@@ -105,7 +104,7 @@ npm run build
 ## Customization
 
 * Update content inside `/src/components`
-* Modify styles in `App.css` and `index.css`
+* Modify styles in `index.css`
 * Add new sections by creating new components and importing them into `App.jsx`
 
 ---
